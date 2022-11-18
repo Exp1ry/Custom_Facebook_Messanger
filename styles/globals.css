@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.buttonBreak {
+  display: flex;
+}
+
+@media (max-width: 450px) {
+  .buttonBreak {
+    display: block;
+    text-align: center;
+  }
+}
