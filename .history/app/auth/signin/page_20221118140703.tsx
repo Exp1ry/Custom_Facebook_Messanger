@@ -5,7 +5,7 @@ const SignInPage = async () => {
   const providers = await getProviders()
   return (
     <>
-      <div className="w-full h-full">
+      <div className="h-auto b">
         <SignInComponent providers={providers} />
       </div>
     </>
