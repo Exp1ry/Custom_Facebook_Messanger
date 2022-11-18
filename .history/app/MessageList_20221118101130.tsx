@@ -6,14 +6,12 @@ import { Message } from "../typings"
 import fetcher from "../utils/fetchMessages"
 import MessageComponent from "./MessageComponent"
 import { clientPusher, serverPusher } from "../utils/pusher"
-import { useSession } from "next-auth/react"
 
 type Props = {
   initialMsg: Message[]
 }
 
 const MessageList = ({ initialMsg }: Props) => {
-  const { data: session } = useSession()
   const {
     data: messages,
     error,
@@ -42,11 +40,7 @@ const MessageList = ({ initialMsg }: Props) => {
   }, [messages, mutate, clientPusher])
   return (
     <>
-      <div
-        className={`space-y-5 px-5 pt-8 pb-32 max-w-2xl xl:max-w-4xl mx-auto ${
-          !session?.user ? "blur-xl" : ""
-        }`}
-      >
+      <div className="space-y-5 px-5 pt-8 pb-32 max-w-2xl xl:max-w-4xl mx-auto">
         {(messages || initialMsg)?.map((i) => (
           <MessageComponent key={i.id} message={i} />
         ))}

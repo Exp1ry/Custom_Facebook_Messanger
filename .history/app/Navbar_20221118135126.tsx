@@ -28,11 +28,10 @@ const Navbar = () => {
     <>
       <header className="sticky top-0 z-50 bg-[#181818] flex justify-center items-center p-10 shadow-sm ">
         <div className="flex flex-col items-center space-y-5 ">
-          <div className=" space-x-2 items-center">
+          <div className="mx-auto space-x-2 items-center">
             <img
               src="https://i.postimg.cc/3rL0zhgr/Zaid-Logo2.png"
               width={50}
-              className="mx-auto"
             ></img>
             <p className="my-auto text-blue-500">
               Welcome to Zaid's Messaging service

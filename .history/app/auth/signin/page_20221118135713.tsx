@@ -5,7 +5,15 @@ const SignInPage = async () => {
   const providers = await getProviders()
   return (
     <>
-      <div className="h-auto bg-cover">
+      <div className="bg-[#181818] ">
+        <img
+          width={100}
+          height={100}
+          src="https://i.postimg.cc/6pDLZB3Z/Zaid-2.png"
+          className="rounded-full object-cover mx-auto"
+        ></img>
+      </div>
+      <div>
         <SignInComponent providers={providers} />
       </div>
     </>

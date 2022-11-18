@@ -32,7 +32,6 @@ const Navbar = () => {
             <img
               src="https://i.postimg.cc/3rL0zhgr/Zaid-Logo2.png"
               width={50}
-              className="mx-auto"
             ></img>
             <p className="my-auto text-blue-500">
               Welcome to Zaid's Messaging service

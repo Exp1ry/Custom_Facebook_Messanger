@@ -10,7 +10,7 @@ const SignInComponent = ({ providers }: Props) => {
   return (
     <div>
       {Object.values(providers!).map((i) => (
-        <div key={i.name} className="text-center mt-3 ">
+        <div key={i.name} className="text-center mt-3">
           <button
             onClick={async () =>
               await signIn(i.id, {
